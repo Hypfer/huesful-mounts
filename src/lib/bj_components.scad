@@ -55,6 +55,68 @@ module flipped_dimmer_switch_v1_frame() {
     }
 }
 
+module tap_dial_frame() {
+
+    frame_size = 76.7;
+    frame_thickness = 1.5;
+    frame_height = 4.5;
+    
+    base_height = 1.5;
+    
+    access_notch_width = 8.6;
+    
+    mount_notch_height = 1.25;
+    mount_notch_width = 5;
+    mount_notch_offset = 15.75;
+    
+    clearance_notch_width = 1.5;
+    clearance_notch_offset = 27;
+    clearance_notch_base_offset = 0.6;
+
+    difference() {
+        linear_extrude(frame_height) {
+            rounded_rectangle(frame_size, frame_size, 1);
+        }
+
+        translate([frame_thickness, frame_thickness, -0.1]) {//actually 0
+            //extended for the prev render to work better
+            cube([frame_size- (frame_thickness * 2), frame_size - (frame_thickness * 2), frame_height + 0.2]); 
+        }
+        
+        translate([
+            (frame_size / 2) - (access_notch_width / 2),
+            0, 
+            base_height
+        ]) {
+            cube([8.6, 3, frame_height]);
+        }
+        
+        for (i = [0, 1]){
+            for (j = [0, 1]){
+                translate([
+                    (i ? frame_size - frame_thickness : 0),
+                    (j ? frame_size - mount_notch_offset - mount_notch_width : mount_notch_offset),
+                    base_height
+                ]) {
+                    cube([frame_thickness, mount_notch_width, mount_notch_height]);
+                }
+            }
+        }
+
+        for (i = [0, 1]){
+            for (j = [0, 1]){
+                translate([
+                    (i ? frame_size - frame_thickness : 0),
+                    (j ? frame_size - clearance_notch_offset - clearance_notch_width : clearance_notch_offset),
+                    base_height + clearance_notch_base_offset
+                ]) {
+                    cube([frame_thickness, clearance_notch_width, 5]);
+                }
+            }
+        }
+    }
+}
+
 module dimmer_switch_v1_dual_frame() {
     difference() {
         union() {
