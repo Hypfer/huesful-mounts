@@ -15,7 +15,7 @@ translate([12.5, 12.5, 2]) {
     bj_module_mount_fillet();
 }
 
-translate([5.15, 5.15, 12.0]) {
+translate([5.25, 5.25, 12.0]) {
     tap_dial_frame();
 
 }

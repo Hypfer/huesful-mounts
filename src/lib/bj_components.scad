@@ -57,7 +57,7 @@ module flipped_dimmer_switch_v1_frame() {
 
 module tap_dial_frame() {
 
-    frame_size = 76.7;
+    frame_size = 76.5;
     frame_thickness = 1.5;
     frame_height = 4.5;
     
@@ -65,11 +65,11 @@ module tap_dial_frame() {
     
     access_notch_width = 8.6;
     
-    mount_notch_height = 1.25;
-    mount_notch_width = 5;
+    mount_notch_height = 1.5;
+    mount_notch_width = 5.5;
     mount_notch_offset = 15.75;
     
-    clearance_notch_width = 1.5;
+    clearance_notch_width = 3;
     clearance_notch_offset = 27;
     clearance_notch_base_offset = 0.6;
 
