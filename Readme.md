@@ -19,6 +19,7 @@ any other Zigbee Switch, any other Wall Switch series and basically whatever one
 | ![Hue_BuschReflex_1DSv1on2M_V_VV_SF](preview_images/Hue_BuschReflex_1DSv1on2M_V_VV_SF.png) | [SCAD File](src/Hue_BuschReflex_1DSv1on2M_V_VV_SF.scad) | [STL File](stls/Hue_BuschReflex_1DSv1on2M_V_VV_SF.stl) |
 | ![Hue_BuschReflex_1DSv1on3M_V_VVV](preview_images/Hue_BuschReflex_1DSv1on3M_V_VVV.png) | [SCAD File](src/Hue_BuschReflex_1DSv1on3M_V_VVV.scad) | [STL File](stls/Hue_BuschReflex_1DSv1on3M_V_VVV.stl) |
 | ![Hue_BuschReflex_1TDon1M_N_N](preview_images/Hue_BuschReflex_1TDon1M_N_N.png) | [SCAD File](src/Hue_BuschReflex_1TDon1M_N_N.scad) | [STL File](stls/Hue_BuschReflex_1TDon1M_N_N.stl) |
+| ![Hue_BuschReflex_1TDon2M_N_S](preview_images/Hue_BuschReflex_1TDon2M_N_S.png) | [SCAD File](src/Hue_BuschReflex_1TDon2M_N_S.scad) | [STL File](stls/Hue_BuschReflex_1TDon2M_N_S.stl) |
 | ![Hue_BuschReflex_2DSv1on1M_VV_N](preview_images/Hue_BuschReflex_2DSv1on1M_VV_N.png) | [SCAD File](src/Hue_BuschReflex_2DSv1on1M_VV_N.scad) | [STL File](stls/Hue_BuschReflex_2DSv1on1M_VV_N.stl) |
 | ![Hue_BuschReflex_2DSv1on2M_VV_VV_N](preview_images/Hue_BuschReflex_2DSv1on2M_VV_VV_N.png) | [SCAD File](src/Hue_BuschReflex_2DSv1on2M_VV_VV_N.scad) | [STL File](stls/Hue_BuschReflex_2DSv1on2M_VV_VV_N.stl) |
 | ![Hue_BuschReflex_2DSv1on2M_VV_VV_S](preview_images/Hue_BuschReflex_2DSv1on2M_VV_VV_S.png) | [SCAD File](src/Hue_BuschReflex_2DSv1on2M_VV_VV_S.scad) | [STL File](stls/Hue_BuschReflex_2DSv1on2M_VV_VV_S.stl) |
