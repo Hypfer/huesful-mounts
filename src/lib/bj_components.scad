@@ -193,3 +193,62 @@ module bj_module_mount_fillet() {
 module bj_module_hole() {
     cube([62, 62, 10]);
 }
+
+module bj_hole_screw_mount() {
+    difference() {
+        cube([62, 62, 10]);
+
+        translate([5.5, 5.5, -0.1]) {
+            linear_extrude(12) {
+                rounded_square2(51, 9);
+            }
+        }
+
+        translate([3.4, 3.4, 1.5]) {
+            linear_extrude(12) {
+                rounded_square2(55.2, 9);
+            }
+        }
+    }
+
+    difference() {
+        union() {
+            translate([13.5, 3.5, 0]) {
+                cube([35, 55, 4]);
+            }
+
+            translate([13.5, 56.5, 1.5]) {
+                cube([35, 2, 1.5]);
+            }
+
+            translate([56.5, 13.5, 1.5]) {
+                cube([2, 35, 1.5]);
+            }
+
+            translate([3.5, 13.5, 0]) {
+                cube([55, 35, 4]);
+            }
+        }
+        
+        translate([31,10,0]) {
+            cylinder(h=6,r=3);
+        }
+        
+        translate([31,52,0]) {
+            cylinder(h=6,r=3);
+        }
+        
+        translate([10,31,0]) {
+            cylinder(h=6,r=3);
+        }
+        
+        translate([52,31,0]) {
+            cylinder(h=6,r=3);
+        }
+        
+        translate([31,31,0]) {
+            cylinder(h=6,r=3);
+        }
+    }
+}
+
